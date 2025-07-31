@@ -5,8 +5,6 @@ import com.ferocia.termdeposit.service.CalculatorService;
 import com.ferocia.termdeposit.service.InputService;
 
 import java.math.BigDecimal;
-import java.text.NumberFormat;
-import java.util.Locale;
 import java.util.Scanner;
 
 import static com.ferocia.termdeposit.constants.InputConstraints.numberFormat;
