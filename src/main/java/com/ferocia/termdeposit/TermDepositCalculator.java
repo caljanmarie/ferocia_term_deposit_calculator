@@ -9,6 +9,8 @@ import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Scanner;
 
+import static com.ferocia.termdeposit.constants.InputConstraints.numberFormat;
+
 public class TermDepositCalculator {
     public static void main(String[] args) {
         InputService inputService = new InputService();
@@ -24,7 +26,6 @@ public class TermDepositCalculator {
 
             BigDecimal finalBalance = calculatorService.calculateFinalBalance(amount, interestRate, termInYears, interestFrequency);
 
-            NumberFormat numberFormat = NumberFormat.getCurrencyInstance(Locale.of("en", "AU"));
             String formattedBalance = numberFormat.format(finalBalance);
             System.out.println("Final Balance after " + termInYears + "years: " + formattedBalance);
 

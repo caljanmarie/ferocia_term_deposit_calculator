@@ -18,7 +18,7 @@ public class InputService {
             try {
                 BigDecimal amount = new  BigDecimal(input);
                 if (amount.compareTo(MIN_AMOUNT) < 0 || amount.compareTo(MAX_AMOUNT) > 0 )
-                    throw new IllegalArgumentException("Amount must be between $10.00 and $1,500,000.00.");
+                    throw new IllegalArgumentException("Amount must be between " + numberFormat.format(MIN_AMOUNT) + " and " + numberFormat.format(MAX_AMOUNT) + ".");
                 return amount;
             } catch(NumberFormatException e) {
                 System.out.println("Invalid input. Please enter valid numeric amount.");
