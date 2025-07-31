@@ -54,7 +54,7 @@ A simple CLI-based term deposit calculator written in Java using Maven.
 3. Run the app
     - Run via Maven: mvn exec:java -Dexec.mainClass="com.ferocia.termdeposit.TermDepositCalculator"
     - Run the JAR manually: java -jar target/Ferocia_TermDepositCalculator-1.0-SNAPSHOT.jar
-
+---
 - Build Runnable JAR in IntelliJ
 1. Clone the repository
 2. Go to File → Project Structure > Artifacts
@@ -70,3 +70,10 @@ A simple CLI-based term deposit calculator written in Java using Maven.
 4. Run the JAR
    java -jar out/artifacts/Ferocia_TermDepositCalculator_jar/Ferocia_TermDepositCalculator.jar
     
+## How to run test
+- Using Maven 
+  - mvn clean test
+---
+- Manually running test in IntelliJ
+1. Right-click package folder src > test > java > com.ferocia.termdeposit.service
+2. Select play/run icon (▶) Run "Tests in 'com.ferocia.termdeposit.service'" 
