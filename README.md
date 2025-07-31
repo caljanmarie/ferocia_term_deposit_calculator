@@ -57,7 +57,7 @@ A simple CLI-based term deposit calculator written in Java using Maven.
 
 - Build Runnable JAR in IntelliJ
 1. Clone the repository
-2. Open Project Structure
+2. Go to File → Project Structure > Artifacts
    - Click the + button → JAR → From modules with dependencies
    - Choose main class: TermDepositCalculator
    - Select the module (your project)
